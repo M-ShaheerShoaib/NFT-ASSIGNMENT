@@ -1,0 +1,300 @@
+/* ========== Fonts ========== */
+@font-face {
+    font-family: 'square_sans_serif';
+    src: url(fonts/square_sans_serif.ttf);
+}
+
+@font-face {
+    font-family: 'IntroThinAlt';
+    src: url(fonts/IntroThinAlt.otf);
+}
+
+@font-face {
+    font-family: 'IntroBookAlt';
+    src: url(fonts/IntroBookAlt.otf);
+}
+
+@font-face {
+    font-family: 'NexusBoldRegular';
+    src: url(fonts/Nexusbold.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zen+Dots&display=swap');
+
+/* ========== General Layout ========== */
+body {
+    margin: 0;
+    font-family: "Poppins";
+    background-color: #f5f5f5;
+    color: #000000;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1300px;
+    margin: 0 auto; 
+}
+
+/* ========== Navbar ========== */
+.navbar {
+    background-color: transparent;
+    width: 100%;
+}
+
+/* Specific styling for home page navbar */
+.container-home .navbar {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 35px;
+}
+
+.nav-left {
+    font-family: "Zen Dots";
+}
+
+.nav-center, .nav-right {
+    font-family: "Zen Dots", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+
+.nav-left a, .nav-center a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.menu-icon {
+    width: 50px;
+    height: auto;
+}
+
+/* ========== Hover Link Animation ========== */
+.nav-center a,
+.nav-left a, .nav-right a:hover {
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-center a:hover,
+.nav-left a:hover, .nav-right a:hover {
+    transform: scale(1.2);
+}
+
+/* ========== Home Page ========== */
+.title-home {
+    font-family: 'NexusBoldRegular';
+    font-weight: 100;
+    font-size: 450px;
+    margin-top: 150px;
+    margin-bottom: 180px;
+    line-height: 0vh;
+    letter-spacing: 0px;
+}
+
+.container-home {
+    background-color: #D7CB00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    height: 100vh;
+    margin-top: 0;
+    position: relative;
+}
+
+.container-home .navbar {
+    position: absolute;
+}
+
+.leftdots {
+    width: 10px;
+    height: auto;
+}
+
+.Dots {
+    padding-right: 10px;
+}
+
+.image1 {
+    margin-top: 0;
+    padding-top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.home-kids {
+    width: auto;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+.home-section-dark {
+    background: #000;
+    color: #fff;
+    width: 100%;
+    padding: 60px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Homeh2 {
+    font-family: 'NexusBoldRegular';
+    font-weight: 100;
+    font-size: 700px;
+    line-height: 1.1;
+    letter-spacing: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 24px;
+    padding-bottom: 0;
+    color: #fff;
+    background: none;
+}
+
+
+.descriptionhome {
+    max-width: 1250px;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.home-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeimage2 {
+    width: 100%;
+    height: auto;
+}
+
+/* ========== Title Sections ========== */
+.title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-wrapper2 {
+    text-align: center;
+}
+
+.title {
+    font-family: 'NexusBoldRegular';
+    font-weight: 100;
+    font-size: 400px;
+    line-height: .68;
+    margin-top: 35px;
+    margin-bottom: 50px;
+    letter-spacing: 0px;
+}
+
+.image-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 1270px;
+    border-radius: 0px;
+}
+
+/* ========== Misc Headings ========== */
+.p2h2, .p3h3, .p4h4 {
+    font-family: 'Gotham-Black';
+    line-height: 0;
+}
+
+/* ========== Collection Page ========== */
+.title-collection {
+    font-family: 'NexusBoldRegular';
+    font-size: 400px;
+    font-weight: 100;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: .7;
+}
+
+.description {
+    max-width: 700px;
+    margin: 50px auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1;
+}
+
+/* ========== Artist Page ========== */
+.title-artist {
+    font-family: 'NexusBoldRegular';
+    font-size: 300px;
+    font-weight: 100;
+    margin: 10px;
+    line-height: .78;
+}
+
+/* ========== Footer ========== */
+.footer {
+    display: flex;
+    justify-content: flex-start; /* Align to the left */
+    align-items: center;
+    padding: 20px;
+    padding-left: 50px;
+    gap: 20px; /* spacing between items */
+    color: black;
+}
+
+.footer a, .footer i, .footer img {
+    color: black;
+    fill: black;
+    filter: brightness(0);
+    text-decoration: none;
+}
+
+.footer-right p {
+    margin: 0;
+    font-size: 14px;
+    color: black;
+}
+
+h6{
+    font-family: 'Poppins';
+    
+}
+.dreamers-paragraph{
+    padding-left: 100px;
+}
+
+.dreamers-text{
+    font-size: 12px;
+    line-height: 1;
+}
